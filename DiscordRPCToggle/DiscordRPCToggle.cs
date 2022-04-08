@@ -18,14 +18,8 @@ namespace DiscordRPCToggle
         public override string Version => "1.0.0";
         public override string Link => "https://github.com/art0007i/DiscordRPCToggle/";
 
+        [AutoRegisterConfigKey]
         private static readonly ModConfigurationKey<bool> KEY_RPC = new ModConfigurationKey<bool>("rpc_enable", "If false discord rpc will be disabled", () => true);
-
-        public override ModConfigurationDefinition GetConfigurationDefinition()
-        {
-            List<ModConfigurationKey> keys = new List<ModConfigurationKey>();
-            keys.Add(KEY_RPC);
-            return DefineConfiguration(new Version(1, 0, 0), keys);
-        }
 
         private static ModConfiguration config;
 
