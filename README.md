@@ -1,3 +1,5 @@
+# This mod is OBSOLETE, use [PresenceToggle](https://github.com/art0007i/PresenceToggle) instead.
+
 # DiscordRPCToggle
 
 A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https://neos.com/) that allows you to toggle discord rich presence for neos with a config option.
